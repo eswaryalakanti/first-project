@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* if float property is there then there should be an width property and after using the float use clear property */
+        *{
+            box-sizing: border-box;
+              /*if we use this whole width is 500px including margin,padding,border */
+        }
+#w1, #w2 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 120px;
+   
+}
+.container{
+    max-width:960px;
+    margin: auto;
+}
+#w1{
+    background-color: azure;
+    background-image: url(aa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    line-height: 1.6rem;
+ 
+}
+
+#w2{
+    font-family: 'Delicious Handrawn', cursive
+}
+#box-3{
+    float: left;
+    width: 38%;
+    border: 1px solid;
+    margin-bottom: 10px;
+
+}
+#box-4{
+    float: right;
+    width: 56%;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+#box-5{
+    border: 1px solid;
+}
+#cl{
+    clear: both;
+}
+.nav-bar{
+    background-color:rgb(55, 14, 138);
+    border-radius: 10px;
+}
+.uli{
+    overflow:auto;
+}
+.uli li{
+    float: left;
+    display: block;
+    padding: 16px 20px;
+    
+}
+.uli li a{
+    color: rgb(204, 199, 199);
+    text-decoration: none;
+    padding: 8px 10px;
+}
+.uli li a:hover{
+    color: rgb(230, 226, 226);
+   background-color:rgb(22, 3, 61);
+
+
+}
+.img{
+   width: 960px;
+    margin: auto;
+}
+.img-2{
+    display: block;
+    margin: auto;
+}
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div>
+            <ul class="uli">
+                <li>
+                  <a href="#"> home</a> 
+                </li>
+                <li>
+                    <a href="#">login</a>
+                   
+                </li>
+                <li>
+                    <a href="#"> aboutus</a>
+                   
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="w1">
+            <h1>welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla pariatur minima cupiditate. Similique ullam quo culpa non aut nisi accusamus pariatur, dicta dolorum explicabo reiciendis totam laborum inventore a enim?</p>
+        
+           </div>
+           <div id="w2">
+            
+            <h1>
+                body
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum, reprehenderit placeat perferendis earum molestias molestiae enim voluptatum magni aliquid a pariatur ratione dolores facere voluptas porro excepturi soluta aut?
+            </p>
+           </div> 
+           <div id="box-3">
+            <h1>box3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, labore! Omnis aliquam tenetur magnam et!</p>
+           </div>
+           <div id="box-4">
+            <h1>box4</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse harum aliquam et voluptatum sunt.</p>
+           </div>
+           <div id="cl"></div>
+           <div id="box-5">
+            <h1>box5</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse harum aliquam et voluptatum sunt.</p>
+           </div>
+           
+   <div class="img"><img src="aa.jpg" alt=""></div> 
+    </div>
+   <div class="img"><img src="aa.jpg" alt="" style="z-index:-1"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, eos.</p></div>
+   <img src="aa.jpg" alt="" class="img-2">
+
+</body>
+</html>
